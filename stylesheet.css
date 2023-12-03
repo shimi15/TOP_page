@@ -82,7 +82,7 @@ header h1{
 	text-align: left;
 }
 .sec01_left h3{
-	font-size: 20px;
+	font-size: 15px;
 	margin-bottom: 10px;
 }
 .sec01_left p{
@@ -140,7 +140,8 @@ header h1{
 	margin-bottom: 50px;
 }
 
-.sec02 h2{
+.sec02 h3{
+	font-size: 20px;
 	margin-bottom: 10px;
 }
 
@@ -177,6 +178,7 @@ header h1{
 }
 
 .sec03 h3{
+	font-size: 15px;
 	margin-bottom: 5px;
 }
 
@@ -191,6 +193,7 @@ margin-bottom: 50px;
 }
 
 .sec04 h1{
+	font-size: 20px;
 	margin-bottom: 15px;
 }
 
@@ -206,7 +209,7 @@ margin-bottom: 50px;
 }
 .sec04_box h3{
 	margin: 15px 0;
-	font-size: 15px;
+	font-size: 12px;
 }
 .sec04_box p{
 	width: 30%;
@@ -227,14 +230,14 @@ margin-bottom: 50px;
 
 .btn_left{
 	width: 48%;
-	padding: 60px 0;
+	padding: 30px 0;
 	align-items: center;
 	text-align: center;
 	background-color: white;	
 }
 .btn_right{
 	width: 48%;
-	padding: 60px 0;
+	padding: 30px 0;
 	align-items: center;
 	text-align: center;
 	background-color: white;	
@@ -265,12 +268,37 @@ margin-bottom: 50px;
 	background-color: green;
 }
 
+.sec05{
+	align-items: center;
+	text-align: center;
+	margin-bottom: 70px;
+
+}
+.sec05 h4{
+	margin-bottom: 10px;
+}
+.sec05 p{
+	margin-bottom: 10px;
+}
+
+.link{
+	border-top: #fffafa groove;
+	border-bottom: #fffafa groove;
+}
+.link_box{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 30px;
+	margin-top: 40px;
+	margin-bottom: 100px;
+}
+
 
 
 
 footer p{
 	text-align: center;
 	font-size: 12px;
-	padding: 20px;
+	padding: 10px;
 }
 
