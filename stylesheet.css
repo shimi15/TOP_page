@@ -93,11 +93,6 @@ header h1{
 	width: 32%;
 }
 
-
-
-
-
-
 @media only screen and (max-width: 767px){
 	.header{
 		padding-bottom: 0px;
@@ -122,12 +117,26 @@ header h1{
 		padding: 0 10px;
 	}
 
-	
-	.wrapper h1{
-		font-size: 22px;
-		margin-bottom: 20px;
-		text-align: center;
+	.sec01_content{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
 	}
+
+	.sec01_left{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	
+	.sec01_left p{
+		font-size: 8px;
+	}
+	
+	.sec01_right{
+		width: 100%;
+	}
+
+	
 }
 
 
@@ -155,6 +164,22 @@ header h1{
 .sec02_p{
 	margin-top: 10px;
 	font-size: 12px;
+}
+
+@media only screen and (max-width: 767px){
+	.sec02_content{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.sec02_left{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.sec02_right{
+		width: 100%;
+	}
 }
 
 .sec03{
@@ -186,7 +211,24 @@ header h1{
  font-size: 12px;
 }
 
+@media only screen and (max-width: 767px){
+	.sec03_box{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
 
+	.sec03_left{
+		width: 100%;
+		margin: 10px 30px;
+	}
+	.sec03_right{
+		width: 100%;
+	}
+	.sec03_right p{
+		font-size: 12px;
+	}
+}
 
 .sec04{
 margin-bottom: 50px;
@@ -213,6 +255,27 @@ margin-bottom: 50px;
 }
 .sec04_box p{
 	width: 30%;
+}
+
+@media only screen and (max-width: 767px){
+	.sec04_content{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.sec04_box{
+		width: 100%;
+	}
+	.sec04_box h3{
+		font-size: 15px;
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
+	.sec04_box p{
+		margin-bottom: 20px;
+	}
+
 }
 
 .sec_btn{
@@ -268,6 +331,32 @@ margin-bottom: 50px;
 	background-color: green;
 }
 
+@media only screen and (max-width: 767px){
+	.content_box{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+	}
+
+	.btn_left{
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 20px 0;
+	}
+	.btn_right{
+		width: 100%;
+	}
+	.left_box{
+		padding: 0 40px;
+	}
+	.right_box{
+		padding: 0 40px;
+	}
+	
+
+}
+
 .sec05{
 	align-items: center;
 	text-align: center;
@@ -279,6 +368,14 @@ margin-bottom: 50px;
 }
 .sec05 p{
 	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 767px){
+	.sec05{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
 }
 
 .link{
@@ -293,7 +390,17 @@ margin-bottom: 50px;
 	margin-bottom: 100px;
 }
 
+@media only screen and (max-width: 767px){
+	.link_box{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0px;
+		margin-bottom: 10px;
+	}
 
+}
 
 
 footer p{
