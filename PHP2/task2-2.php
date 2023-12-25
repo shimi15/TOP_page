@@ -17,24 +17,24 @@
 
 <table border= 1 style="border-collapse: collapse">
     <tr>
-      <th><?=$table{0} ?></th>
-      <th><?=$table{1} ?></th>
-      <th><?=$table{2} ?></th>
+      <th><?=$table[0] ?></th>
+      <th><?=$table[1] ?></th>
+      <th><?=$table[2] ?></th>
     </tr>
     <tr>
-      <td><?=$list1{0} ?></td>
-      <td><?=$list1{1} ?></td>
-      <td><?=$list1{2} ?></td>
+      <td><?=$list1[0] ?></td>
+      <td><?=$list1[1] ?></td>
+      <td><?=$list1[2] ?></td>
     </tr>
     <tr>
-      <td><?=$list2{0} ?></td>
-      <td><?=$list2{1} ?></td>
-      <td><?=$list2{2} ?></td>
+      <td><?=$list2[0] ?></td>
+      <td><?=$list2[1] ?></td>
+      <td><?=$list2[2] ?></td>
     </tr>
     <tr>
-      <td><?=$list3{0} ?></td>
-      <td><?=$list3{1} ?></td>
-      <td><?=$list3{2} ?></td>
+      <td><?=$list3[0] ?></td>
+      <td><?=$list3[1] ?></td>
+      <td><?=$list3[2] ?></td>
     </tr>
 </table>
   

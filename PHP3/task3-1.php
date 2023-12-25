@@ -26,22 +26,22 @@
 
 <table border= 1 style="border-collapse: collapse",text-align:center>
     <tr>
-      <th><?=$table{0} ?></th>
-      <th><?=$table{1} ?></th>
-      <th><?=$table{2} ?></th>
-      <th><?=$table{3} ?></th>
+      <th><?=$table[0] ?></th>
+      <th><?=$table[1] ?></th>
+      <th><?=$table[2] ?></th>
+      <th><?=$table[3] ?></th>
     </tr>
     <tr>
-      <td><?=$list1{0} ?></td>
-      <td><?=$list1{1} ?>円</td>
-      <td><?=$list1{2} ?>円</td>
-      <td><?=$list1{3} ?>円</td>
+      <td><?=$list1[0] ?></td>
+      <td><?=$list1[1] ?>円</td>
+      <td><?=$list1[2] ?>円</td>
+      <td><?=$list1[3] ?>円</td>
     </tr>
     <tr>
-      <td><?=$list2{0} ?></td>
-      <td><?=$list2{1} ?>円</td>
-      <td><?=$list2{2} ?>円</td>
-      <td><?=$list2{3} ?>円</td>
+      <td><?=$list2[0] ?></td>
+      <td><?=$list2[1] ?>円</td>
+      <td><?=$list2[2] ?>円</td>
+      <td><?=$list2[3] ?>円</td>
     </tr>
 </table>
 
