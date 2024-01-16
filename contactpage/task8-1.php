@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="stylesheet.css">
-  <title>確認ページ</title>
+  <title>contactページ</title>
 </head>
 <body>
   <header>
@@ -46,11 +46,11 @@
       </div>
     </div>
 
-    <div class="contact_form">
-      <form action="task8-1.php" method="post" name="name" onsubmit="return vaildate()">
+    <form action="task8-1.php" method="post">
+      <div class="contact_form">
         <div class="item">
           <div class="content">
-            <table for="nema">お名前<span class="caution">必須</span></table>
+            <label for="nema">お名前<span class="caution">必須</span></label>
           </div>
           <div class="input">
             <div class="input_border">
@@ -145,13 +145,11 @@
         </div>
         <div class="confirmation">
           <div class="confirmation_border">
-
-            <button type="submit"><a href="task8-1.php">確認</a></button>
+            <button type="submit">確認</button>
           </div>
         </div>
-      </form>
-    </div>
-  
+      </div>
+    </form>
 
     <section class="sec_btn">
       <div class="content_box">
@@ -185,7 +183,7 @@
       <div class="link_box">
         <ul>
           <div class="link01">
-            <a href="http://192.168.33.10/TOP_PAGE/PHP1/">リンク01</a>
+            <a href="http://192.168.33.10/TOP_PAGE/PHP/">リンク01</a>
           </div>
           <div class="link02">
             <a href="http://192.168.33.10/TOP_PAGE/PHP2/">リンク02</a>
