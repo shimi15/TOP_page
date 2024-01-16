@@ -183,26 +183,26 @@
       <div class="link_box">
         <ul>
           <div class="link01">
-            <a href="http://192.168.33.10/TOP_PAGE/PHP/">リンク01</a>
+            <a href="../PHP">リンク01</a>
           </div>
           <div class="link02">
-            <a href="http://192.168.33.10/TOP_PAGE/PHP2/">リンク02</a>
+            <a href="../PHP">リンク02</a>
           </div>
           <div class="link03">
-            <a href="http://192.168.33.10/TOP_PAGE/PHP3/">リンク03</a>
+            <a href="../PHP">リンク03</a>
           </div>
           <div class="link04">
-            <a href="http://192.168.33.10/TOP_PAGE/PHP4/">リンク04</a>
+            <a href="../PHP">リンク04</a>
           </div>
           <div class="link05">
-            <a href="http://192.168.33.10/TOP_PAGE/PHP5/">リンク05</a>
+            <a href="../PHP">リンク05</a>
           </div>
           <div class="link06_7">
             <div class="link06">
-              <a href="http://192.168.33.10/TOP_PAGE/PHP6/">リンク06</a>
+              <a href="../PHP">リンク06</a>
             </div>
             <div class="link07">
-              <a href="http://192.168.33.10/TOP_PAGE/PHP7/">リンク07</a>
+              <a href="../PHP">リンク07</a>
             </div>
           </div>
         </ul>
