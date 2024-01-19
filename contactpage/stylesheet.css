@@ -138,7 +138,7 @@ img{
 }
 
 .contact_form{
-	margin-left:15px;
+	margin: 0 30px;
 	border-top: outset;
 	border-bottom: inset;
 }
@@ -159,11 +159,15 @@ img{
 }
 
 .input{
-	width: 70%;
-	align-items: center;
+	width: 100%;
 }
+
+.input_width{
+	width: 100%;
+}
+
 .input_border{
-	border: ridge;
+	border: solid 2px #dcdcdc;
 	padding: 10px 0;
 }
 
@@ -171,6 +175,7 @@ img{
 	margin-left: 5px;
 	font-size: 15px;
 }
+
 
 
 .caution{
@@ -185,7 +190,7 @@ option{
 	width: 100%;
 }
 
-textarea{
+textarea {
 	width: 100%;
 	height: 100px;
 }
