@@ -47,7 +47,69 @@
     </div>
 
     <form action="http://192.168.33.10\TOP_page\contactpage\task8-1.php" method="post">
+
+
+
       <div class="contact_form">
+        <div class=error_text>
+          <p>
+            <?php
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+              if (empty($_POST["name"])) {
+                  echo "※名前を入力してください<br>";
+              } else {
+              }
+            }
+
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+              if (empty($_POST["furigana"])) {
+                  echo "※フリガナを入力してください<br>";
+              } else {
+              }
+            }
+
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+              if (empty($_POST["email"])) {
+                echo "※メールアドレスを入力してください<br>";
+              } elseif (!strpos($_POST["email"],'@')) { 
+                echo "※メールアドレスには'@'が含まれている必要があります。<br>";
+              } else {
+              }
+            }
+
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+              if (empty($_POST["tel"])) {
+                echo "※電話番号入力してください<br>";
+              } elseif (!preg_match("/^\d{10,11}$/",$_POST["tel"])) {
+                echo "電話番号を10桁、または11桁で入力してください<br>";
+              } else {
+              }
+            }
+
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+              if ($_POST["item"]== 1) {
+                echo "※お問い合わせ項目を選択してください<br>";
+              } else {
+              }
+            }
+
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+              if (empty($_POST["content"])) {
+                  echo "※お問い合わせ内容を入力してください<br>";
+              } else {
+              }
+            }
+
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+              if (empty($_POST["checkbox"])) {
+                echo "※チェックボックスを確認してください";
+              } else {
+              }
+            }
+
+            ?>
+          </p>
+        </div>
         <div class="item">
           <div class="content">
             <label for="nema">お名前<span class="caution">必須</span></label>
@@ -56,14 +118,8 @@
             <div class="input_border">
               <div class="input_text">
                 <input type="text" class=input_whidt name="name" placeholder="山田 太郎" value="<?php 
-                    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                        $name =($_POST["name"]);
-                      if (empty($name)) {
-                        echo "名前を入力してください";
-                      } else { 
-                        echo htmlspecialchars($name, ENT_QUOTES, 'UTF-8');
-                      }
-                    }
+                      $name =($_POST["name"]);
+                      echo htmlspecialchars($name, ENT_QUOTES, 'UTF-8');
                   ?>">
               </div>
             </div>
@@ -78,15 +134,9 @@
             <div class="input_border">
               <div class="input_text">
                 <input type="text" class=input_width name="furigana" placeholder="ヤマダ タロウ" value="<?php 
-                    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                        $furigana =($_POST["furigana"]);
-                      if (empty($furigana)) {
-                        echo "フリガナを入力してください";
-                      } else { 
-                        echo htmlspecialchars($furigana, ENT_QUOTES, 'UTF-8');
-                      }
-                    }
-                ?>">
+                    $furigana =($_POST["furigana"]);
+                    echo htmlspecialchars($furigana, ENT_QUOTES, 'UTF-8');
+                  ?>">
               </div>
             </div>
           </div>
@@ -101,16 +151,9 @@
               <div class="input_text">
                 <input type="text" class=input_width name="email" placeholder="info@fast-creademy.jp" 
                 value="<?php 
-                    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                        $email = ($_POST["email"]);
-                      if (empty($email)) {
-                        echo "メールアドレスを入力してください";
-                      } else if (!strpos($email,'@')) { 
-                        echo "メールアドレスには'@'が含まれている必要があります。";
-                      } else { 
-                        echo htmlspecialchars($email, ENT_QUOTES, 'UTF-8');
-                      }
-                    }?>">
+                    $email = ($_POST["email"]);
+                    echo htmlspecialchars($email, ENT_QUOTES, 'UTF-8');
+                  ?>">
               </div>
             </div>
           </div>
@@ -123,17 +166,10 @@
           <div class="input">
             <div class="input_border">
               <div class="input_text">
-                <input type="text" class=input_width name="tel" placeholder="09012345678" value="<?php
-                  if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                    $tel = ($_POST["tel"]);
-                    if (empty($tel)) {
-                      echo "電話番号入力してください";
-                    } elseif (!preg_match("/^\d{10,11}$/",$tel)) {
-                      echo "電話番号を10桁、または11桁で入力してください";
-                    } else {
-                      echo htmlspecialchars($tel, ENT_QUOTES, 'UTF-8');
-                    }
-                  }?>">
+                <input type="text" class=input_width name="tel" placeholder="09012345678" value="<?php 
+                  $tel = ($_POST["tel"]);
+                  echo htmlspecialchars($tel, ENT_QUOTES, 'UTF-8');
+                  ?>">
               </div>
             </div>
           </div>
@@ -149,28 +185,28 @@
                 <select name="item">
                   <option 
                   <?php
-                  if ($_POST["item"]=="選択してください"){
+                  if ($_POST["item"]=="1"){
                     echo selected;}
                   ?>
-                  value="選択してください">選択してください</option>
+                  value="1">選択してください</option>
                   <option 
                   <?php
-                  if ($_POST["item"]=="ご意見・ご感想"){
+                  if ($_POST["item"]=="2"){
                     echo selected;}
                   ?>
-                  value="ご意見・ご感想">ご意見・ご感想</option>
+                  value="2">ご意見・ご感想</option>
                   <option 
                   <?php
-                  if ($_POST["item"]=="不具合について"){
+                  if ($_POST["item"]=="3"){
                     echo selected;}
                   ?>
-                  value="不具合について">不具合について</option>
+                  value="3">不具合について</option>
                   <option 
                   <?php
-                  if ($_POST["item"]=="返信希望"){
+                  if ($_POST["item"]=="4"){
                     echo selected;}
                   ?>
-                  value="返信希望">返信希望</option>
+                  value="4">返信希望</option>
                 </select>
               </div>
             </div>
@@ -184,9 +220,9 @@
           <div class="input">
             <div class="input_border">
               <div class="input_text">
-                <input type="text" name="content" placeholder="こちらにお問合せ内容をご記入ください" value="<?php
+              <textarea type="text" name="content" placeholder="こちらにお問合せ内容をご記入ください"><?php
                     echo ($_POST["content"]);
-                  ?>"></input>
+                  ?></textarea>
               </div>
             </div>
           </div>
@@ -198,8 +234,20 @@
               <label>個人情報保護方針<span class="caution">必須</span></label>
             </div>
           </div>
+          
+          <?php session_start();?>
+
           <div class="check_privacy">
-            <label><input type="checkbox" name="acceptance" value="1" aria-invalid="false" class="agree"><span class="check">個人情報保護方針</span></label>
+            <label><input type="checkbox" name="checkbox" value="1" aria-invalid="false" class="agree"<?php
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+              $_SESSION["checkbox"] = isset($_POST["checkbox"]);
+            }
+            if (isset($_SESSION["checkbox"]) && $_SESSION["checkbox"]) {
+              echo ' checked';
+            }
+            ?>><span class="check">個人情報保護方針</span>
+          </label>
+            
             <p>に同意します。</p>
           </div>
           </div>
@@ -211,17 +259,16 @@
               $furigana = $_POST["furigana"];
               $email = $_POST["email"];
               $tel = $_POST["tel"];
-              $checkbox = $_POST["checkbox"];
-
+              $item = $_POST["item"];
+              $content = $_POST["content"];
+              $checkbox = isset($_POST["checkbox"]) ? $_POST["checkbox"] : '';
               if ($_SERVER["REQUEST_METHOD"] == "POST") {
-              
-              if (!empty($name) && !empty($furigana) &&!empty($email) && !empty($tel) && preg_match("/\d{10,11}$/",$tel)){
-                echo "送信";
-                header ("Location: task8-2.php");
-              } else{
-                echo "確認";
+                if (!empty($name) && !empty($furigana) && !empty($email) && !empty($tel) && preg_match("/\d{10,11}$/",$tel) && $content && $checkbox) {
+                  echo "<a href="."task8-2.php".">送信<a>";
+                } else{
+                  echo "確認";
+                }
               }
-            }
               ?>
             </button>
           </div>
@@ -240,7 +287,7 @@
         <div class="btn_right">
           <div class="right_box">
             <h4 class="btn_h4">お気軽にお問い合わせください</h4>
-              <a href="" class="right_btn">お問い合わせ</a>
+              <a href="contactpage.html" class="right_btn">お問い合わせ</a>
           </div>
         </div>
       </div>
