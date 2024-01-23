@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="stylesheet.css">
-  <title>contactページ</title>
+  <title>送信完了ページ</title>
 </head>
 <body>
   <header>
@@ -48,6 +48,9 @@
 
     <form action="http://192.168.33.10\TOP_page\contactpage\task8-1.php" method="post">
       <div class="contact_form">
+        <div class="ok">
+          <h1>送信完了しました。</h1>
+        </div>
         <div class="item">
           <div class="content">
             <label for="nema">お名前<span class="caution">必須</span></label>
@@ -55,7 +58,7 @@
           <div class="input">
             <div class="input_border">
               <div class="input_text">
-                <input type="text" class=input_width name="name" placeholder="山田 太郎" value="">
+                <input type="text" class=input_width name="name" placeholder="山田 太郎">
               </div>
             </div>
           </div>
@@ -68,7 +71,7 @@
           <div class="input">
             <div class="input_border">
               <div class="input_text">
-                <input type="text" class=input_width name="furigana" placeholder="ヤマダ タロウ" value="">
+                <input type="text" class=input_width name="furigana" placeholder="ヤマダ タロウ">
               </div>
             </div>
           </div>
@@ -81,7 +84,7 @@
           <div class="input">
             <div class="input_border">
               <div class="input_text">
-                <input type="text" class=input_width name="email" placeholder="info@fast-creademy.jp" value="">
+                <input type="text" class=input_width name="email" placeholder="info@fast-creademy.jp">
               </div>
             </div>
           </div>
@@ -94,7 +97,7 @@
           <div class="input">
             <div class="input_border">
               <div class="input_text">
-                <input type="text" class=input_width name="tel" placeholder="09012345678" value="">
+                <input type="text" class=input_width name="tel" placeholder="09012345678">
               </div>
             </div>
           </div>
@@ -108,10 +111,10 @@
             <div class="input_border">
               <div class="input_text">
                 <select name="item">
-                  <option value="選択してください">選択してください</option>
-                  <option value="ご意見・ご感想">ご意見・ご感想</option>
-                  <option value="不具合について">不具合について</option>
-                  <option value="返信希望">返信希望</option>
+                  <option value="1">選択してください</option>
+                  <option value="2">ご意見・ご感想</option>
+                  <option value="3">不具合について</option>
+                  <option value="4">返信希望</option>
                 </select>
               </div>
             </div>
@@ -125,7 +128,7 @@
           <div class="input">
             <div class="input_border">
               <div class="input_text">
-                <textarea name="content" placeholder="こちらにお問合せ内容をご記入ください"></textarea>
+                <textarea type="text" name="content" placeholder="こちらにお問合せ内容をご記入ください"></textarea>
               </div>
             </div>
           </div>
@@ -161,7 +164,7 @@
         <div class="btn_right">
           <div class="right_box">
             <h4 class="btn_h4">お気軽にお問い合わせください</h4>
-              <a href="" class="right_btn">お問い合わせ</a>
+              <a href="contactpage.html" class="right_btn">お問い合わせ</a>
           </div>
         </div>
       </div>
