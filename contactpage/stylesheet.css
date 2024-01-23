@@ -143,6 +143,22 @@ img{
 	border-bottom: inset;
 }
 
+.ok {
+	margin-top: 20px;
+}
+.ok {
+	text-align: center;
+}
+
+.error_text {
+	margin-top: 20px;
+}
+
+.error_text p{
+	text-align: center;
+	color: red;
+}
+
 .item{
 	display: flex;
 	justify-content: left;
@@ -175,7 +191,6 @@ img{
 	margin-left: 5px;
 	font-size: 15px;
 }
-
 
 
 .caution{
