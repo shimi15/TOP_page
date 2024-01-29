@@ -113,6 +113,12 @@ img{
 .sec01 h2{
 	margin-bottom: 20px;
 }
+
+h3{
+	margin-bottom: 20px;
+	color: blue;
+}
+
 .sec01 p{
 	font-size: 12px;
 }
