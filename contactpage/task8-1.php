@@ -46,9 +46,7 @@
       </div>
     </div>
 
-    <form action="http://192.168.33.10\TOP_page\contactpage\task8-1.php" method="post">
-
-
+    <form action="http://192.168.33.10\TOP_page\contactpage\task9-1.php" method="post">
 
       <div class="contact_form">
         <div class=error_text>
@@ -188,25 +186,25 @@
                   if ($_POST["item"]=="1"){
                     echo selected;}
                   ?>
-                  value="1">選択してください</option>
+                  value="選択してください">選択してください</option>
                   <option 
                   <?php
                   if ($_POST["item"]=="2"){
                     echo selected;}
                   ?>
-                  value="2">ご意見・ご感想</option>
+                  value="ご意見・ご感想">ご意見・ご感想</option>
                   <option 
                   <?php
                   if ($_POST["item"]=="3"){
                     echo selected;}
                   ?>
-                  value="3">不具合について</option>
+                  value="不具合について">不具合について</option>
                   <option 
                   <?php
                   if ($_POST["item"]=="4"){
                     echo selected;}
                   ?>
-                  value="4">返信希望</option>
+                  value="返信希望">返信希望</option>
                 </select>
               </div>
             </div>
@@ -235,10 +233,9 @@
             </div>
           </div>
           
-          <?php session_start();?>
-
           <div class="check_privacy">
             <label><input type="checkbox" name="checkbox" value="1" aria-invalid="false" class="agree"<?php
+            session_start();
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
               $_SESSION["checkbox"] = isset($_POST["checkbox"]);
             }
@@ -264,7 +261,7 @@
               $checkbox = isset($_POST["checkbox"]) ? $_POST["checkbox"] : '';
               if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if (!empty($name) && !empty($furigana) && !empty($email) && !empty($tel) && preg_match("/\d{10,11}$/",$tel) && $content && $checkbox) {
-                  echo "<a href="."task8-2.php".">送信<a>";
+                  echo "<a href="."task9-1.php".">送信<a>";
                 } else{
                   echo "確認";
                 }
